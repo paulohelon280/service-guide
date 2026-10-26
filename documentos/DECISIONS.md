@@ -1108,6 +1108,36 @@ estava `INACTIVE`. A disponibilidade gratuita segue sujeita às regras do proved
 
 ---
 
+## ADR-054 — Entrega das contas do Service Guide ao titular (26/10/2026)
+
+**Contexto medido:** o responsável pediu a entrega integral ao titular. Código
+em `GarciaCarlos1985/service`, Supabase em organização gerenciada pela Vercel,
+Cloudflare já na conta do titular e SMTP ainda dependente do desenvolvedor.
+O destino GitHub vazio recebeu permissão de escrita; a organização Supabase
+de destino foi conferida com Helon como Owner.
+
+**Decisão:** usar `paulohelon280/service-guide` como repositório oficial, copiar
+histórico e branches publicados sem reescrita e transferir o projeto Supabase
+existente para a organização do titular. Trocar o SMTP pelo acesso do titular
+antes de transferir o banco; preparar backup criptografado e assinatura Android
+portátil. Não transferir contas pessoais ou revogar tokens de outros projetos.
+
+**Alternativas:** a transferência nativa do repositório preservaria metadados,
+mas exige administração na origem e resolver o nome já ocupado no destino.
+Migrar para outro projeto Supabase exigiria copiar dados, usuários, Storage e
+configurações, acrescentando risco sem necessidade demonstrada.
+
+**Motivo:** entregar código e serviços sob controle do titular, preservando a
+aplicação existente e reduzindo a dependência do computador do desenvolvedor.
+
+**Consequências e execução:** seis branches e três variáveis públicas de Actions
+copiadas e conferidas; origem preservada. PRs/issues/execuções anteriores ficam
+na origem. Backup e exportação privada Android conferidos localmente. SMTP e
+transferência Supabase ainda pendentes; a cópia Git não executou deploy,
+migração ou contratação. Detalhes em `TRANSFERENCIA-HELON-2026-10-26.md`.
+
+---
+
 > **Regra de manutenção:** a partir de 2026-08-12, todo ADR novo do SERVICE segue
 > a mesma disciplina — Contexto medido ou declarado como hipótese, Decisão com
 > alternativas consideradas, Motivo, Consequências (incluindo custo aceito e

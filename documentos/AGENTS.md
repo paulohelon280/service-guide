@@ -5,15 +5,21 @@ assumir este projeto. Leia-o antes de qualquer tarefa.
 
 ## Repositório oficial
 
-Por orientação expressa do usuário em **16/10/2026**, o repositório deste
-projeto é **https://github.com/GarciaCarlos1985/service**.
+Por orientação expressa do usuário para entrega ao titular em **26/10/2026**,
+o repositório deste projeto é **https://github.com/paulohelon280/service-guide**.
 
-- `origin` deve apontar para `https://github.com/GarciaCarlos1985/service.git`
+- `origin` deve apontar para `https://github.com/paulohelon280/service-guide.git`
   tanto para fetch quanto para push.
 - Todos os commits, branches, PRs e envios deste projeto usam esse repositório;
   a branch principal é `main`.
 - Confira o destino configurado antes de cada envio. Qualquer troca de
   repositório depende de uma nova instrução explícita do usuário.
+
+O histórico e as seis branches publicadas foram copiados e comparados com
+`GarciaCarlos1985/service`, preservado como referência histórica. PRs, issues
+e execuções antigas de Actions continuam no repositório de origem. Ver
+`TRANSFERENCIA-HELON-2026-10-26.md`; a transferência do Supabase e a troca de
+SMTP têm status próprios e não decorrem automaticamente da cópia Git.
 
 ## O que é o projeto
 

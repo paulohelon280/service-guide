@@ -37,10 +37,16 @@ mínimo de novas senhas de 12. Ver `PUBLICACAO-SEGURANCA-2026-10-17.md`.
 | App SSR + assets | Worker `service-guide` no Cloudflare |
 | Banco, Auth, RLS, Realtime | Supabase `taabjnmsaaltsiehywbw`, preservado |
 | Mídia | Assets / URLs HTTPS e Supabase Storage `guide-media` (até 5 MiB por imagem); nenhum R2 provisionado |
-| Código | `https://github.com/GarciaCarlos1985/service`, `main` |
+| Código | `https://github.com/paulohelon280/service-guide`, `main` |
 
 Nenhum plano pago foi contratado. O serviço continua sujeito às cotas da conta.
 Staging remoto e integração automática Workers Builds não foram provisionados.
+
+Em 26/10/2026, o código e as seis branches publicadas passaram para o
+repositório do titular, após comparação dos commits. Essa cópia não executou
+deploy, não alterou o banco e não copiou tokens administrativos. As três
+variáveis públicas de Actions foram configuradas no novo repositório. Ver
+`TRANSFERENCIA-HELON-2026-10-26.md` para os demais itens da entrega.
 
 O PR do painel identificou uma integração Git legada da Vercel ainda ativa:
 ela criou uma prévia automática ao receber o candidato. O arquivo `vercel.json`

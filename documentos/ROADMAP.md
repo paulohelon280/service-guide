@@ -18,6 +18,13 @@ suítes SQL atuais passaram após a retomada, com rollback. Ver
 `PUBLICACAO-PWA-2026-10-26.md`, `INSTALAVEIS-2026-10-25.md` e ADR-053.
 Nenhum serviço/plano pago contratado.
 
+Entrega de titularidade em 26/10/2026: histórico e seis branches conferidos em
+`paulohelon280/service-guide`, que passa a ser o repositório oficial. A cópia
+não publica o site nem transfere o Supabase por si só. Backup criptografado e
+assinatura Android portátil foram preparados e conferidos localmente; a troca
+do SMTP e a transferência da organização Supabase continuam pendentes.
+Ver `TRANSFERENCIA-HELON-2026-10-26.md` e ADR-054.
+
 Produção registrada em 2026-10-18: **cadastro com logotipo e dias/horários publicado no Cloudflare;
 15 migrações aplicadas e testadas no Supabase real, com legado preservado.** Catálogo vazio,
 aguardando conteúdo real. Duas contas administrativas já estão configuradas.
@@ -79,7 +86,7 @@ avaliações, ajuda e administração estão implementados no candidato local.
 O legado permanece separado. Ver a proposta **ADR-048**, o relatório
 `ADAPTACAO-SERVICE-GUIDE-2026-10-15.md` e a prévia DEV `/previa`.
 
-O código está na `main` do repositório `GarciaCarlos1985/service`. Em 16/10,
+Naquele estágio, o código estava na `main` de `GarciaCarlos1985/service`. Em 16/10,
 o usuário autorizou a hospedagem no Cloudflare Workers (ADR-049); o adaptador
 foi substituído e a evidência de validação/publicação está em
 `CLOUDFLARE-2026-10-16.md`. Em seguida, autorizou a ativação do Supabase
