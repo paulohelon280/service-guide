@@ -118,11 +118,16 @@ Confirmação de e-mail e Turnstile são obrigatórios. O `site_url` do Auth é
 `https://service-guide.helon280.workers.dev`; os destinos de retorno incluem
 os caminhos exatos `/conta` e `/recuperar-senha` documentados. O SMTP Gmail do
 titular foi aplicado e testado em 26/10: autenticação TLS e solicitação de
-recuperação pelo Supabase Auth aceitas; caixa de entrada ainda aguarda
-confirmação. Não houve alteração das senhas de acesso ao site nesse teste.
+recuperação pelo Supabase Auth aceitas. A captura do responsável confirmou
+o teste SMTP simples na caixa de entrada; o e-mail de recuperação ainda
+aguarda confirmação própria. Não houve alteração das senhas do site.
 
-A transferência da organização Supabase ainda está pendente e é uma operação
-separada. Ver `SMTP-TITULAR-2026-10-26.md`,
+A transferência da organização Supabase foi concluída após confirmação humana.
+O mesmo projeto agora pertence a `paulohelon280's Org`; painel e API confirmaram
+o destino e Helon como Owner. Conferência posterior preservou as 43 tabelas
+com RLS, 15 migrações, três contas Auth e contagens dos registros; onze
+verificações HTTP passaram. Nenhum novo deploy ou mudança de plano ocorreu.
+Ver `SMTP-TITULAR-2026-10-26.md`,
 `TRANSFERENCIA-HELON-2026-10-26.md` e os relatórios históricos de publicação.
 
 ## Rollback

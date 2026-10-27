@@ -18,14 +18,18 @@ suítes SQL atuais passaram após a retomada, com rollback. Ver
 `PUBLICACAO-PWA-2026-10-26.md`, `INSTALAVEIS-2026-10-25.md` e ADR-053.
 Nenhum serviço/plano pago contratado.
 
-Entrega de titularidade em 26/10/2026: histórico e seis branches conferidos em
+Entrega de titularidade, atualizada em 27/10/2026: histórico e seis branches conferidos em
 `paulohelon280/service-guide`, que passa a ser o repositório oficial. A cópia
 não publica o site nem transfere o Supabase por si só. Backup criptografado e
 assinatura Android portátil foram preparados e conferidos localmente. O SMTP
 do titular foi aplicado: autenticação TLS e solicitação real de recuperação
 pelo Supabase Auth passaram, com CAPTCHA público e confirmação de e-mail
-preservados. Recebimento na caixa de entrada ainda aguarda confirmação.
-A transferência da organização Supabase continua pendente. Ver
+preservados. O teste SMTP simples chegou à caixa de entrada do titular;
+recebimento da recuperação do Auth continua pendente de confirmação.
+Supabase transferido para `paulohelon280's Org`, com Helon Owner, mantendo
+o mesmo projeto. As 43 tabelas com RLS, 15 migrações, três contas e contagens
+dos dados foram conferidas após a operação; onze verificações HTTP passaram.
+Entrega privada e aceite operacional mantêm status próprios. Ver
 `TRANSFERENCIA-HELON-2026-10-26.md`, `SMTP-TITULAR-2026-10-26.md` e ADR-054.
 
 Produção registrada em 2026-10-18: **cadastro com logotipo e dias/horários publicado no Cloudflare;

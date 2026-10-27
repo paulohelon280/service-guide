@@ -1142,6 +1142,16 @@ aceitas; fluxo público sem CAPTCHA segue recusado. Recebimento na caixa de
 entrada aguarda confirmação. Transferência da organização Supabase ainda não
 executada; ver `SMTP-TITULAR-2026-10-26.md`.
 
+**Atualização de execução — conferência em 27/10/2026:** após confirmação
+humana no momento da operação, o projeto Supabase existente foi transferido
+para `paulohelon280's Org`, com Helon Owner. Referência, banco, Auth, Storage,
+RLS e domínio foram preservados; contagens das 43 tabelas, 15 migrações e
+três contas permaneceram iguais. O vínculo Vercel Marketplace foi removido
+pela transferência nativa. Onze verificações HTTP passaram. O responsável
+mostrou o teste SMTP simples recebido no Gmail do titular; a confirmação de
+recebimento da recuperação do Auth mantém status separado. Não houve deploy,
+schema, exclusão ou plano pago. Recibo: `evidencias/entrega-titular-2026-10-27.json`.
+
 ---
 
 > **Regra de manutenção:** a partir de 2026-08-12, todo ADR novo do SERVICE segue

@@ -118,7 +118,17 @@ da transação protegida pelo runner.
 - `service_role`, tokens CLI — NUNCA em `VITE_*`, nunca no chat/repo.
 - **Sem chaves de pagamento**: não há gateway no MVP (ADR-044).
 
-## Estado atual (2026-10-26)
+## Estado atual (2026-10-27)
+
+**Titularidade conferida:** GitHub oficial `paulohelon280/service-guide`,
+Cloudflare na conta do titular e Supabase `taabjnmsaaltsiehywbw` transferido
+para `paulohelon280's Org` (`rundjmvpowpppnozqtso`). Helon é Owner; o
+responsável técnico permanece Developer até o aceite da entrega. Banco,
+Auth e Storage foram preservados: 43 tabelas públicas com RLS, 15 migrações,
+três contas e nenhuma redução nas contagens. Onze verificações HTTP passaram.
+Nenhum schema, deploy ou plano pago foi alterado pela transferência.
+Ver `TRANSFERENCIA-HELON-2026-10-26.md` e
+`evidencias/entrega-titular-2026-10-27.json`.
 
 **PWA publicada em 26/10/2026:** PR #5 aprovado e mesclado; fonte `0d73e69`
 na `main`, Worker `ee01187a-ef9b-4a46-989a-0d1779f9b0ce`, 100% do tráfego.
@@ -133,9 +143,10 @@ O Supabase foi retomado no mesmo projeto em 25/10, e seis suítes SQL passaram.
 
 **SMTP do titular aplicado em 26/10/2026:** autenticação Gmail com TLS e
 solicitação real de recuperação pelo Supabase Auth aceitas. CAPTCHA público e
-confirmação de e-mail permanecem exigidos. O recebimento na caixa de entrada
-ainda aguarda confirmação do destinatário. A transferência da organização
-Supabase continua pendente; ela não decorre da troca de SMTP. Ver
+confirmação de e-mail permanecem exigidos. O teste SMTP simples foi confirmado
+na caixa de entrada pela captura do responsável; o recebimento do e-mail de
+recuperação do Supabase ainda aguarda confirmação. A transferência da
+organização foi concluída em operação separada da troca do SMTP. Ver
 `SMTP-TITULAR-2026-10-26.md` e `TRANSFERENCIA-HELON-2026-10-26.md`.
 
 ### Cadastro publicado em 18/10/2026, preservado na versão atual

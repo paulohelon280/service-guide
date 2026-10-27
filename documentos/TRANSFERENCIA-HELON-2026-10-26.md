@@ -1,7 +1,8 @@
 # Transferência do Service Guide ao titular
 
-Estado medido em 26/10/2026. Cada item abaixo tem validação independente.
-Esta documentação não declara concluída a transferência de todos os serviços.
+Estado atualizado em 27/10/2026. GitHub, Supabase e Cloudflare estão sob
+controle do titular. Cada item abaixo tem validação independente; a entrega
+dos arquivos privados e o aceite operacional continuam com status próprios.
 
 ## Código: copiado e conferido
 
@@ -24,31 +25,38 @@ O repositório de origem foi preservado. PRs, issues e execuções antigas de
 Actions permanecem lá; um push Git não transfere esses metadados. Os workflows
 copiados validam código/Android e não publicam automaticamente em produção.
 
-## Supabase: destino validado, transferência pendente
+## Supabase: transferência concluída e conferida
 
-O site publicado utiliza o projeto existente `taabjnmsaaltsiehywbw`.
-A organização de destino foi conferida no painel: `paulohelon280's Org`,
-com Helon como Owner e o responsável técnico como Developer.
+O projeto existente `taabjnmsaaltsiehywbw` foi transferido, após confirmação
+humana no momento da operação, para `paulohelon280's Org`
+(`rundjmvpowpppnozqtso`). O painel confirmou Helon como Owner e o responsável
+técnico como Developer. A Management API confirmou a organização de destino
+e o estado `ACTIVE_HEALTHY` novamente em 27/10/2026.
 
-A pré-validação do painel aceitou esse destino. O projeto atual é gerenciado
-pelo Vercel Marketplace; a transferência remove o vínculo de armazenamento
-da Vercel. A aplicação publicada usa Cloudflare Workers.
+A operação nativa removeu o vínculo de armazenamento do Vercel Marketplace.
+A aplicação publicada continua no Cloudflare Workers, no mesmo endereço.
 
-O caminho aprovado é transferir o projeto atual, preservando banco, Auth,
-RLS e Storage. Não trocar apenas a URL pelo projeto antigo do titular:
-isso seria outra migração e não transfere dados ou contas.
+Foi preservado o projeto atual, com banco, Auth, RLS e Storage. O projeto
+antigo do titular não foi usado como substituto. A conferência posterior,
+por conexão TLS validada e transação somente leitura, encontrou:
+
+- 43 tabelas públicas, todas com RLS ativa; nenhuma tabela removida.
+- 15 migrações e três contas Auth, com as mesmas contagens anteriores.
+- Nenhuma redução nas contagens de registros das 43 tabelas.
+- Um bucket Storage e nenhum objeto; catálogo de empresas já estava vazio.
+- Onze verificações HTTP da PWA/site aprovadas, incluindo proteção de cache
+  administrativo e associação Android.
 
 O SMTP do titular foi aplicado em 26/10/2026. Autenticação Gmail com TLS e
-solicitação real de recuperação pelo Supabase Auth passaram; o recebimento na
-caixa de entrada ainda aguarda confirmação do destinatário. CAPTCHA e
+solicitações reais de recuperação pelo Supabase Auth passaram. O titular
+mostrou o teste simples recebido na caixa de entrada; o recebimento do
+e-mail de recuperação do Auth ainda aguarda confirmação. CAPTCHA e
 confirmação de e-mail continuam obrigatórios. Ver `SMTP-TITULAR-2026-10-26.md`.
 
-A transferência da organização ainda não foi executada. A sessão de navegador
-disponível não tem acesso ao projeto de origem; é necessário retomar a conta
-proprietária de origem. Depois da transferência, conferir propriedade,
-referência do projeto, permissões, Auth, Storage e disponibilidade do site.
-Nenhum plano pago, exclusão de projeto ou migração de schema foi executado
-nesta preparação.
+Nenhum plano pago, exclusão de projeto, migração de schema ou novo deploy
+foi executado nesta transferência. A URL do Supabase, as credenciais públicas
+da aplicação e o domínio do site foram preservados. Recibo público atual:
+`evidencias/entrega-titular-2026-10-27.json`.
 
 ## Backup e assinatura: preparados localmente
 
@@ -81,12 +89,13 @@ como comprovado ou removido durante o encerramento.
 
 ## Conferência de encerramento
 
-- Comprovar que o titular controla GitHub, organização Supabase e Cloudflare.
-- Confirmar o recebimento do e-mail de teste do SMTP do titular; autenticação
-  SMTP e solicitação de recuperação pelo Supabase já passaram, com as proteções ativas.
+- Titularidade de GitHub, organização Supabase e Cloudflare conferida.
+- Teste simples do SMTP recebido; confirmar separadamente o recebimento do
+  e-mail de recuperação do Supabase, com as proteções ativas.
 - Validar login novo, recuperação, painel, cadastro/edição, logotipo, horários
   e desativação/reativação pelo fluxo real do titular.
-- Conferir o CI do novo repositório e registrar o resultado.
+- CI do novo repositório aprovado; conferir também a execução que registra
+  esta atualização documental.
 - Entregar os materiais privados e instruções de recuperação ao novo responsável.
 - Somente após aceite, retirar acessos temporários específicos do Service Guide;
   preservar contas, tokens e automações que atendam outros projetos.

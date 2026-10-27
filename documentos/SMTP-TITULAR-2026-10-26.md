@@ -17,10 +17,17 @@ Os testes da credencial atual passaram:
 - Recusa de uma solicitação pública sem CAPTCHA válido.
 - Confirmação de e-mail e Turnstile preservados na configuração.
 
-A solicitação real de recuperação foi aceita em **26/10/2026 às 21:14**,
-America/Sao_Paulo (`2026-10-27T00:14:31Z`). O destinatário foi convidado a
-confirmar o recebimento. Aceite pelo serviço não equivale a entrega comprovada
-na caixa de entrada; esse último item segue pendente.
+A primeira solicitação real de recuperação foi aceita em **26/10/2026 às
+21:14**, America/Sao_Paulo (`2026-10-27T00:14:31Z`). Houve novo aceite após a
+transferência da organização, para as duas contas existentes autorizadas.
+O log Auth confirmou `/recover` com HTTP 200. Aceite pelo serviço não equivale
+a entrega comprovada na caixa de entrada.
+
+**Atualização de 27/10/2026:** o responsável mostrou uma captura do teste
+simples, sem links, recebido na caixa de entrada do Gmail do titular e
+enviado por essa mesma conta. Isso comprova a entrega do teste SMTP direto.
+O recebimento do e-mail **“Redefina sua senha — Service Guide”**, gerado pelo
+Supabase Auth, ainda precisa de confirmação própria.
 
 ## Escopo do teste
 
@@ -35,18 +42,20 @@ Management API não foi usada como comprovação do funcionamento. A evidência
 positiva foi a autenticação SMTP e a solicitação real de recuperação aceita
 pelo Auth, em conjunto com a configuração aplicada.
 
-Nenhum deploy, migration, troca de plano ou transferência de organização foi
-executado nesta etapa. O site continua no Cloudflare e no mesmo projeto
-Supabase. A troca do SMTP não transfere a propriedade do banco.
+Nenhum deploy, migration ou troca de plano foi executado nesta etapa.
+A organização Supabase foi transferida em operação separada, após confirmação
+humana, e conferida no painel e na API. O site continua no Cloudflare e no
+mesmo projeto Supabase. A troca do SMTP, por si só, não transfere o banco.
 
 ## Pendências da entrega
 
-- Confirmar recebimento do e-mail na caixa de entrada do titular.
-- Retomar a sessão da conta proprietária de origem e executar a transferência
-  para a organização do titular, com a confirmação exigida no painel.
-- Validar a propriedade e os serviços após a transferência e atualizar o
-  pacote privado antes da entrega final.
+- Confirmar recebimento do e-mail de recuperação do Auth; o teste simples
+  do SMTP já foi confirmado pela captura do responsável.
+- Entregar o pacote privado e suas chaves separadas ao novo responsável.
+- Exercitar os fluxos reais do titular antes do aceite operacional.
 
 Recibos técnicos locais, sem senhas, permanecem em `.wrangler/` e não são
 publicados com credenciais. A conferência do banco encontrou 43 tabelas
 públicas com RLS, 15 migrações, três contas Auth e catálogo de empresas vazio.
+O recibo atual é `evidencias/entrega-titular-2026-10-27.json`; o recibo SMTP
+de 26/10 registra o primeiro ensaio e seu estado naquele momento.
