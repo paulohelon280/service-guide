@@ -108,18 +108,22 @@ recebendo eventos do GitHub, mas não é o destino configurado deste build.
 
 ## Banco e autenticação
 
-A migração `20261015032437_guide_commercial_foundation.sql` foi aplicada no
-Supabase real em 16/10/2026, após autorização, ensaio em transação e testes.
-Busca/RPCs comerciais estão ativas e o catálogo está vazio, aguardando dados
-reais. Cadastro, login e perfil foram verificados pelo SDK contra o Auth real.
-O projeto está com confirmação automática de e-mail habilitada e duas contas
-administrativas confirmadas pelo usuário, ativadas e auditadas. O `site_url`
-do Auth é `https://service-guide.helon280.workers.dev`; a lista de retornos inclui
-os caminhos exatos `/conta` e `/recuperar-senha` desse site e dos ambientes locais
-documentados. O cliente informa esses destinos no cadastro e na recuperação.
-Uma sessão válida pode definir a nova senha em `/recuperar-senha`. Link, retorno,
-atualização e novo login foram testados com conta descartável, sem enviar e-mails.
-A entrega na caixa do titular não foi exercitada. Ver `ATIVACAO-SUPABASE-2026-10-16.md`.
+A fundação comercial foi aplicada no Supabase real em 16/10/2026, após
+autorização e testes. As extensões seguintes preservaram o legado. A consulta
+de 26/10 encontrou 15 migrações, 43 tabelas públicas com RLS, três contas Auth
+e nenhuma empresa cadastrada. Os registros das contas administrativas e das
+publicações anteriores estão nos relatórios de ativação e de segurança.
+
+Confirmação de e-mail e Turnstile são obrigatórios. O `site_url` do Auth é
+`https://service-guide.helon280.workers.dev`; os destinos de retorno incluem
+os caminhos exatos `/conta` e `/recuperar-senha` documentados. O SMTP Gmail do
+titular foi aplicado e testado em 26/10: autenticação TLS e solicitação de
+recuperação pelo Supabase Auth aceitas; caixa de entrada ainda aguarda
+confirmação. Não houve alteração das senhas de acesso ao site nesse teste.
+
+A transferência da organização Supabase ainda está pendente e é uma operação
+separada. Ver `SMTP-TITULAR-2026-10-26.md`,
+`TRANSFERENCIA-HELON-2026-10-26.md` e os relatórios históricos de publicação.
 
 ## Rollback
 

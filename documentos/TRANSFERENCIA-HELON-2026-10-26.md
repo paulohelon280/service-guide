@@ -38,8 +38,14 @@ O caminho aprovado é transferir o projeto atual, preservando banco, Auth,
 RLS e Storage. Não trocar apenas a URL pelo projeto antigo do titular:
 isso seria outra migração e não transfere dados ou contas.
 
-Antes da execução, substituir o SMTP pessoal do desenvolvedor pelo SMTP do
-titular e testar a entrega. Depois da transferência, conferir propriedade,
+O SMTP do titular foi aplicado em 26/10/2026. Autenticação Gmail com TLS e
+solicitação real de recuperação pelo Supabase Auth passaram; o recebimento na
+caixa de entrada ainda aguarda confirmação do destinatário. CAPTCHA e
+confirmação de e-mail continuam obrigatórios. Ver `SMTP-TITULAR-2026-10-26.md`.
+
+A transferência da organização ainda não foi executada. A sessão de navegador
+disponível não tem acesso ao projeto de origem; é necessário retomar a conta
+proprietária de origem. Depois da transferência, conferir propriedade,
 referência do projeto, permissões, Auth, Storage e disponibilidade do site.
 Nenhum plano pago, exclusão de projeto ou migração de schema foi executado
 nesta preparação.
@@ -76,7 +82,8 @@ como comprovado ou removido durante o encerramento.
 ## Conferência de encerramento
 
 - Comprovar que o titular controla GitHub, organização Supabase e Cloudflare.
-- Testar o SMTP do titular, preservando confirmação de e-mail e CAPTCHA.
+- Confirmar o recebimento do e-mail de teste do SMTP do titular; autenticação
+  SMTP e solicitação de recuperação pelo Supabase já passaram, com as proteções ativas.
 - Validar login novo, recuperação, painel, cadastro/edição, logotipo, horários
   e desativação/reativação pelo fluxo real do titular.
 - Conferir o CI do novo repositório e registrar o resultado.

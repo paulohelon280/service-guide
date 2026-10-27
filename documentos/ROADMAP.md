@@ -21,9 +21,12 @@ Nenhum serviço/plano pago contratado.
 Entrega de titularidade em 26/10/2026: histórico e seis branches conferidos em
 `paulohelon280/service-guide`, que passa a ser o repositório oficial. A cópia
 não publica o site nem transfere o Supabase por si só. Backup criptografado e
-assinatura Android portátil foram preparados e conferidos localmente; a troca
-do SMTP e a transferência da organização Supabase continuam pendentes.
-Ver `TRANSFERENCIA-HELON-2026-10-26.md` e ADR-054.
+assinatura Android portátil foram preparados e conferidos localmente. O SMTP
+do titular foi aplicado: autenticação TLS e solicitação real de recuperação
+pelo Supabase Auth passaram, com CAPTCHA público e confirmação de e-mail
+preservados. Recebimento na caixa de entrada ainda aguarda confirmação.
+A transferência da organização Supabase continua pendente. Ver
+`TRANSFERENCIA-HELON-2026-10-26.md`, `SMTP-TITULAR-2026-10-26.md` e ADR-054.
 
 Produção registrada em 2026-10-18: **cadastro com logotipo e dias/horários publicado no Cloudflare;
 15 migrações aplicadas e testadas no Supabase real, com legado preservado.** Catálogo vazio,

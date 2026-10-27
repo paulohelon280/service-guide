@@ -131,6 +131,13 @@ não desenvolvido. Ver `PUBLICACAO-PWA-2026-10-26.md` e o ensaio histórico
 `INSTALAVEIS-2026-10-25.md`. Nenhuma migration ou mudança de plano nesta entrega.
 O Supabase foi retomado no mesmo projeto em 25/10, e seis suítes SQL passaram.
 
+**SMTP do titular aplicado em 26/10/2026:** autenticação Gmail com TLS e
+solicitação real de recuperação pelo Supabase Auth aceitas. CAPTCHA público e
+confirmação de e-mail permanecem exigidos. O recebimento na caixa de entrada
+ainda aguarda confirmação do destinatário. A transferência da organização
+Supabase continua pendente; ela não decorre da troca de SMTP. Ver
+`SMTP-TITULAR-2026-10-26.md` e `TRANSFERENCIA-HELON-2026-10-26.md`.
+
 ### Cadastro publicado em 18/10/2026, preservado na versão atual
 
 O PR #3 foi aprovado, mesclado na `main` e publicado. Logo e rotina semanal

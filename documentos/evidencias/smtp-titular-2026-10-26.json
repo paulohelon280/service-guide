@@ -1,0 +1,15 @@
+{
+  "testedAt": "2026-10-27T00:14:31.175Z",
+  "project": "taabjnmsaaltsiehywbw",
+  "smtpTlsAuthenticationPassed": true,
+  "smtpProvider": "Gmail do titular",
+  "authConfigurationUpdateAccepted": true,
+  "supabaseRecoveryEmailAccepted": true,
+  "existingRecipientVerified": true,
+  "publicCaptchaEnforced": true,
+  "emailConfirmationRequired": true,
+  "inboxReceiptVerified": false,
+  "passwordChanged": false,
+  "newUsersCreated": false,
+  "supabaseOwnershipTransferCompleted": false
+}

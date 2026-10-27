@@ -1136,6 +1136,12 @@ na origem. Backup e exportação privada Android conferidos localmente. SMTP e
 transferência Supabase ainda pendentes; a cópia Git não executou deploy,
 migração ou contratação. Detalhes em `TRANSFERENCIA-HELON-2026-10-26.md`.
 
+**Atualização de execução — 26/10/2026, 21:14 (America/Sao_Paulo):** SMTP do
+titular aplicado, autenticação TLS e solicitação real de recuperação pelo Auth
+aceitas; fluxo público sem CAPTCHA segue recusado. Recebimento na caixa de
+entrada aguarda confirmação. Transferência da organização Supabase ainda não
+executada; ver `SMTP-TITULAR-2026-10-26.md`.
+
 ---
 
 > **Regra de manutenção:** a partir de 2026-08-12, todo ADR novo do SERVICE segue
